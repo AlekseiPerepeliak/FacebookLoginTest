@@ -8,7 +8,7 @@ public class BrowserManager {
     public static WebDriver browser;
 
     public static void openBrowser(){
-        System.setProperty("webdriver.gecko.driver", "C:/drivers/geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "./target/classes/geckodriver.exe");
         browser = new FirefoxDriver();
         browser.manage().window().maximize();
         browser.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
