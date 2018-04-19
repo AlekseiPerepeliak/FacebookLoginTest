@@ -16,7 +16,7 @@ public class LoginFacebookTest {
         String actualTextatHomePage = Navigation.
                 goToFacebook().
                 clickLoginButtonFromSinUpPage().
-                enterUsersCredentials("", "").
+                enterUsersCredentials("test@mail,com", "testes").
                 clickLoginButton().getUsersHomeLinkText();
         assertEquals(actualTextatHomePage, "Home", "Cannot find Home link, user was not logged in!");
 
