@@ -13,7 +13,8 @@ public class LoginFacebookTest {
 
     @Test
     public void loginFacebook() {
-        String actualTextatHomePage = Navigation.
+        FacebookUsersHomePage actualTextatHomePage = new FacebookUsersHomePage();
+        Navigation.
                 goToFacebook().
                 clickLoginButtonFromSinUpPage().
                 enterUsersCredentials("fupxzqr_carrieroman_1517492731@tfbnw.net", "!@#Trololo").
