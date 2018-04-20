@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class FacebookUsersHomePage {
 
-    @FindBy(css = "._3qcu._cy7")
+    @FindBy(id = "u_0_f")
     WebElement homeLink;
 
     public String getUsersHomeLinkText(){

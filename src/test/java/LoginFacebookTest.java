@@ -13,13 +13,13 @@ public class LoginFacebookTest {
 
     @Test
     public void loginFacebook() {
-        FacebookUsersHomePage actualTextatHomePage = new FacebookUsersHomePage();
-        Navigation.
-                goToFacebook().
-                clickLoginButtonFromSinUpPage().
-                enterUsersCredentials("fupxzqr_carrieroman_1517492731@tfbnw.net", "!@#Trololo").
-                clickLoginButton().getUsersHomeLinkText();
-        assertEquals(actualTextatHomePage.toString(), "Home", "Cannot find Home link, user was not logged in!");
+        String actualTextatHomePage =
+                Navigation
+                .goToFacebook()
+                .clickLoginButtonFromSinUpPage()
+                .enterUsersCredentials("fupxzqr_carrieroman_1517492731@tfbnw.net", "trololo123")
+                .clickLoginButton().getUsersHomeLinkText();
+        assertEquals(actualTextatHomePage, "Home", "Cannot find Home link, user was not logged in!");
 
 
     }
