@@ -7,7 +7,6 @@
     <groupId>SeleniumHomeTask</groupId>
     <artifactId>SeleniumHomeTask</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <dependencies>
 
         <dependency>
