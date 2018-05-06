@@ -16,12 +16,12 @@ public class LogIntoFacebookPage {
     public LogIntoFacebookPage enterUsersCredentials(String username, String password) {
         usenameId.sendKeys(username);
         passwordId.sendKeys(password);
-        return PageFactory.initElements(BrowserManager.browser, LogIntoFacebookPage.class);
+        return PageFactory.initElements(BrowserManager.browser.get(), LogIntoFacebookPage.class);
     }
 
     public FacebookUsersHomePage clickLoginButton() {
         loginButtonSignIn.click();
-        return PageFactory.initElements(BrowserManager.browser, FacebookUsersHomePage.class);
+        return PageFactory.initElements(BrowserManager.browser.get(), FacebookUsersHomePage.class);
 
     }
 }

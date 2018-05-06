@@ -9,6 +9,6 @@ public class LogInOrSignUpFacebookPage {
 
     public LogIntoFacebookPage clickLoginButtonFromSinUpPage() {
         loginButtonRecentLogins.click();
-        return PageFactory.initElements(BrowserManager.browser, LogIntoFacebookPage.class);
+        return PageFactory.initElements(BrowserManager.browser.get(), LogIntoFacebookPage.class);
     }
 }

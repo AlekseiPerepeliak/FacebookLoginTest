@@ -1,13 +1,10 @@
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import static org.testng.Assert.assertEquals;
 
 public class LoginFacebookTest {
 
-    @BeforeClass
+    @BeforeMethod
     public void browser() {
         BrowserManager.openBrowser();
     }
@@ -18,15 +15,49 @@ public class LoginFacebookTest {
                 Navigation
                         .goToFacebook()
                         .clickLoginButtonFromSinUpPage()
-                        .enterUsersCredentials("fupxzqr_carrieroman_1517492731@tfbnw.net", "trololo123")
+                        .enterUsersCredentials("fupxzqr_carrieroman_1517492731@tfbnw.net", "Alexandria181289")
+                        .clickLoginButton()
+                        .getUsersHomeLinkText();
+        assertEquals(actualTextatHomePage, "Home", "Cannot find Home link, user was not logged in!");
+    }
+    @Test
+    public void loginFacebook1() {
+        String actualTextatHomePage =
+                Navigation
+                        .goToFacebook()
+                        .clickLoginButtonFromSinUpPage()
+                        .enterUsersCredentials("fupxzqr_carrieroman_1517492731@tfbnw.net", "Alexandria181289")
                         .clickLoginButton()
                         .getUsersHomeLinkText();
         assertEquals(actualTextatHomePage, "Home", "Cannot find Home link, user was not logged in!");
 
 
     }
+    @Test
+    public void loginFacebook2() {
+        String actualTextatHomePage =
+                Navigation
+                        .goToFacebook()
+                        .clickLoginButtonFromSinUpPage()
+                        .enterUsersCredentials("fupxzqr_carrieroman_1517492731@tfbnw.net", "Alexandria181289")
+                        .clickLoginButton()
+                        .getUsersHomeLinkText();
+        assertEquals(actualTextatHomePage, "Home", "Cannot find Home link, user was not logged in!");
+    }
 
-    @AfterClass
+    @Test
+    public void loginFacebook3() {
+        String actualTextatHomePage =
+                Navigation
+                        .goToFacebook()
+                        .clickLoginButtonFromSinUpPage()
+                        .enterUsersCredentials("fupxzqr_carrieroman_1517492731@tfbnw.net", "Alexandria181289")
+                        .clickLoginButton()
+                        .getUsersHomeLinkText();
+        assertEquals(actualTextatHomePage, "Home", "Cannot find Home link, user was not logged in!");
+    }
+
+    @AfterMethod
     public void closeBrowser() {
         BrowserManager.closeBrowser();
     }
