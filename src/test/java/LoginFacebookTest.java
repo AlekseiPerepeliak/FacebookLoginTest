@@ -15,7 +15,7 @@ public class LoginFacebookTest {
                 Navigation
                         .goToFacebook()
                         .clickLoginButtonFromSinUpPage()
-                        .enterUsersCredentials("fupxzqr_carrieroman_1517492731@tfbnw.net", "")
+                        .enterUsersCredentials("", "")
                         .clickLoginButton()
                         .getUsersHomeLinkText();
         assertEquals(actualTextatHomePage, "Home", "Cannot find Home link, user was not logged in!");
@@ -26,7 +26,7 @@ public class LoginFacebookTest {
                 Navigation
                         .goToFacebook()
                         .clickLoginButtonFromSinUpPage()
-                        .enterUsersCredentials("fupxzqr_carrieroman_1517492731@tfbnw.net", "")
+                        .enterUsersCredentials("", "")
                         .clickLoginButton()
                         .getUsersHomeLinkText();
         assertEquals(actualTextatHomePage, "Home", "Cannot find Home link, user was not logged in!");
@@ -39,7 +39,7 @@ public class LoginFacebookTest {
                 Navigation
                         .goToFacebook()
                         .clickLoginButtonFromSinUpPage()
-                        .enterUsersCredentials("fupxzqr_carrieroman_1517492731@tfbnw.net", "")
+                        .enterUsersCredentials("", "")
                         .clickLoginButton()
                         .getUsersHomeLinkText();
         assertEquals(actualTextatHomePage, "Home", "Cannot find Home link, user was not logged in!");
@@ -51,7 +51,7 @@ public class LoginFacebookTest {
                 Navigation
                         .goToFacebook()
                         .clickLoginButtonFromSinUpPage()
-                        .enterUsersCredentials("fupxzqr_carrieroman_1517492731@tfbnw.net", "")
+                        .enterUsersCredentials("", "")
                         .clickLoginButton()
                         .getUsersHomeLinkText();
         assertEquals(actualTextatHomePage, "Home", "Cannot find Home link, user was not logged in!");
