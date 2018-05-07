@@ -1,4 +1,6 @@
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
@@ -20,6 +22,7 @@ public class LoginFacebookTest {
                         .getUsersHomeLinkText();
         assertEquals(actualTextatHomePage, "Home", "Cannot find Home link, user was not logged in!");
     }
+
     @Test
     public void loginFacebook1() {
         String actualTextatHomePage =
@@ -33,6 +36,7 @@ public class LoginFacebookTest {
 
 
     }
+
     @Test
     public void loginFacebook2() {
         String actualTextatHomePage =
